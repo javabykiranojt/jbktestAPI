@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class QuestionsController {
 
 	public Question getQuestions() {
-		Question question = new Question();
+		Question question = new Question();   // this is just dummy code
 		question.setQuestionText("java is platform independent?");
 		question.setOption1("YES");
 		question.setOption2("NO");
