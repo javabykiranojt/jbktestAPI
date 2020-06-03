@@ -8,10 +8,10 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Component
-@NoArgsConstructor
+/*@NoArgsConstructor
 @Getter
 @Setter
-@AllArgsConstructor
+@AllArgsConstructor*/
 public class Question {
 	String questionText;
 	String option1;
