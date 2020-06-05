@@ -12,6 +12,8 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<properties>
+		<!-- The main class to start by executing java -jar -->
+		<start-class>com.jbk.config.StartApplication</start-class>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 	</properties>
 	<dependencies>
@@ -31,5 +33,5 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
-
+	
 </project>
