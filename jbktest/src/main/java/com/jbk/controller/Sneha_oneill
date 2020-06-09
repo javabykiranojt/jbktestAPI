@@ -1,0 +1,40 @@
+package com.proj3.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("testnewapi")
+public class QuestionsController_SnehaOneill {
+
+	public Question getQuestions() {
+		Question question = new Question();  
+		question.setQuestionText("java is platform independent?");
+		question.setOption1("YES");
+		question.setOption2("NO");
+		question.setCorrectOption("1");
+		question.setExplanation("due to byte code... which is os independent");
+		return question;
+	}
+//@RequestMapping(value = "/businessEntity/{id}", method = RequestMethod.GET, produces = "application/json")
+ // @ApiOperation(value = "Retrieves given entity", response=BusinessEntityModel.class)
+   // public ResponseEntity<?> get(@Valid @PathVariable Long id)
+ 
+		public Question getMarks() {
+		marks mk = new Marks();   // created A class Marks 
+		mk.setOption1("PASS");
+		mk.setOption2("FAIL");
+		if(mk.setOption2=="FAIL")
+		{
+		mk.setExplanation("Need to study more to pass ");
+		}
+		return mk;
+	}
+}
